@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="266da1fe-6655-494b-9769-7c48529df3c6" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://dlx:81/k2services/WCF.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="WCF.xsd" MetadataType="Schema" ID="f332138a-98ec-45fa-9099-44d74ef877b8" SourceId="1" SourceUrl="http://dlx.denallix.com:81/K2Services/WCF.svc?xsd=xsd7" />
+    <MetadataFile FileName="WCF1.xsd" MetadataType="Schema" ID="81af9819-29e7-4cf5-ac9f-2e59ec6ed8b1" SourceId="1" SourceUrl="http://dlx.denallix.com:81/K2Services/WCF.svc?xsd=xsd3" />
+    <MetadataFile FileName="WCF.wsdl" MetadataType="Wsdl" ID="6f71ea45-a2a0-4272-93f5-ebbe04a99b6e" SourceId="1" SourceUrl="http://dlx.denallix.com:81/K2Services/WCF.svc?wsdl=wsdl2" />
+    <MetadataFile FileName="Wcf1.wsdl" MetadataType="Wsdl" ID="b24639c4-1747-4079-abbe-35f6a171714f" SourceId="1" SourceUrl="http://dlx.denallix.com:81/K2Services/WCF.svc?wsdl" />
+    <MetadataFile FileName="WCF2.wsdl" MetadataType="Wsdl" ID="1c099cd5-3f91-4b6b-ba9c-2ada550d2999" SourceId="1" SourceUrl="http://dlx.denallix.com:81/K2Services/WCF.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="WCF2.xsd" MetadataType="Schema" ID="beadebc7-4516-4b86-a27a-4c34c80429db" SourceId="1" SourceUrl="http://dlx.denallix.com:81/K2Services/WCF.svc?xsd=xsd6" />
+    <MetadataFile FileName="WCF3.xsd" MetadataType="Schema" ID="25ca5cd3-36fb-424c-ab80-0d9368fb1656" SourceId="1" SourceUrl="http://dlx.denallix.com:81/K2Services/WCF.svc?xsd=xsd2" />
+    <MetadataFile FileName="WCF.disco" MetadataType="Disco" ID="e0d804ef-1550-43a3-9ad4-a175f6066663" SourceId="1" SourceUrl="http://dlx.denallix.com:81/K2Services/WCF.svc?disco" />
+    <MetadataFile FileName="WCF4.xsd" MetadataType="Schema" ID="eae280b9-fbfb-4237-ab57-13967e8adfd5" SourceId="1" SourceUrl="http://dlx.denallix.com:81/K2Services/WCF.svc?xsd=xsd9" />
+    <MetadataFile FileName="WCF5.xsd" MetadataType="Schema" ID="a68127d4-b600-4710-9fb9-aa5942025fec" SourceId="1" SourceUrl="http://dlx.denallix.com:81/K2Services/WCF.svc?xsd=xsd5" />
+    <MetadataFile FileName="WCF6.xsd" MetadataType="Schema" ID="fe04f898-b78f-420b-b213-d7c71d6c1658" SourceId="1" SourceUrl="http://dlx.denallix.com:81/K2Services/WCF.svc?xsd=xsd1" />
+    <MetadataFile FileName="WCF3.wsdl" MetadataType="Wsdl" ID="7942c4c5-d972-4192-b119-53f4e9b71f4b" SourceId="1" SourceUrl="http://dlx.denallix.com:81/K2Services/WCF.svc?wsdl=wsdl3" />
+    <MetadataFile FileName="WCF4.wsdl" MetadataType="Wsdl" ID="38062de4-ae4d-4be5-98ec-c9615118eb45" SourceId="1" SourceUrl="http://dlx.denallix.com:81/K2Services/WCF.svc?wsdl=wsdl1" />
+    <MetadataFile FileName="WCF7.xsd" MetadataType="Schema" ID="4eb4b96e-84bd-44b7-b5b1-5b07f9665128" SourceId="1" SourceUrl="http://dlx.denallix.com:81/K2Services/WCF.svc?xsd=xsd8" />
+    <MetadataFile FileName="WCF8.xsd" MetadataType="Schema" ID="06072d24-5626-4b41-989c-b9bc90805a0a" SourceId="1" SourceUrl="http://dlx.denallix.com:81/K2Services/WCF.svc?xsd=xsd4" />
+    <MetadataFile FileName="WCF9.xsd" MetadataType="Schema" ID="78d6905a-d6f9-4186-b503-1cddbb1e1405" SourceId="1" SourceUrl="http://dlx.denallix.com:81/K2Services/WCF.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

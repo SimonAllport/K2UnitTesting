@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{704873B9-AF86-43B0-BFB3-98916CD24DA5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SourceCode.Examples.UnitTests.Framework</RootNamespace>
+    <AssemblyName>SourceCode.Examples.UnitTests.Framework</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework">
+      <HintPath>..\..\..\..\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="SourceCode.Data.SmartObjectsClient, Version=4.0.0.0, Culture=neutral, PublicKeyToken=16a2c5aaaa1b130d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\K2 blackpearl\Bin\SourceCode.Data.SmartObjectsClient.dll</HintPath>
+    </Reference>
+    <Reference Include="SourceCode.HostClientAPI, Version=4.0.0.0, Culture=neutral, PublicKeyToken=16a2c5aaaa1b130d, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\K2 blackpearl\Bin\SourceCode.HostClientAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="SourceCode.Workflow.Client, Version=4.0.0.0, Culture=neutral, PublicKeyToken=16a2c5aaaa1b130d, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\K2 blackpearl\Host Server\Bin\SourceCode.Workflow.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="SourceCode.Workflow.Management, Version=4.0.0.0, Culture=neutral, PublicKeyToken=16a2c5aaaa1b130d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\K2 blackpearl\Bin\SourceCode.Workflow.Management.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entities\TestScenarioContext.cs" />
+    <Compile Include="Interfaces\IProcessTest.cs" />
+    <Compile Include="ProcessHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\K2Services\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Service References\K2Services\SourceCode.Examples.UnitTests.Framework.K2Services.Action.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\K2Services\SourceCode.Examples.UnitTests.Framework.K2Services.ActivityInstanceDestination.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\K2Services\SourceCode.Examples.UnitTests.Framework.K2Services.DataField.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\K2Services\SourceCode.Examples.UnitTests.Framework.K2Services.Destination.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\K2Services\SourceCode.Examples.UnitTests.Framework.K2Services.EventInstance.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\K2Services\SourceCode.Examples.UnitTests.Framework.K2Services.ProcessInstance.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\K2Services\SourceCode.Examples.UnitTests.Framework.K2Services.User.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\K2Services\SourceCode.Examples.UnitTests.Framework.K2Services.WorklistItem.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\K2Services\SourceCode.Examples.UnitTests.Framework.K2Services.XmlField.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\K2Services\WCF.wsdl" />
+    <None Include="Service References\K2Services\WCF.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\K2Services\Wcf1.wsdl" />
+    <None Include="Service References\K2Services\WCF1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\K2Services\WCF2.wsdl" />
+    <None Include="Service References\K2Services\WCF2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\K2Services\WCF3.wsdl" />
+    <None Include="Service References\K2Services\WCF3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\K2Services\WCF4.wsdl" />
+    <None Include="Service References\K2Services\WCF4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\K2Services\WCF5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\K2Services\WCF6.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\K2Services\WCF7.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\K2Services\WCF8.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\K2Services\WCF9.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\K2Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\K2Services\WCF.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\K2Services\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\K2Services\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\K2Services\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
